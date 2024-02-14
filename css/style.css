@@ -40,6 +40,48 @@ body
     background: #eee;
 }
 
+/* banner */
+
+section
+{
+    padding: 2rem 9%;
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.heading span
+{
+    background: var(--green);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+
+}
+.btn
+{
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 8rem 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #fff;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+/* banner */
+
 .header
 {
     border: 0px solid;
@@ -105,6 +147,12 @@ body
     display: none;
 }
 
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
 .header .search-form
 {
     border: 0px solid;
@@ -120,6 +168,17 @@ body
     align-items: center;
     box-shadow: var(--box-shadow);
 }
+
+/** search form 
+
+.header .search-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+*/
+
 
 .header .search-form input
 {
@@ -146,10 +205,56 @@ body
     color: var(--green);
 }
 
+.home
+{
+    border: 0px solid;
+    display:flex ;
+    justify-content: center;
+    background: url(../image/banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+
+}
+
+.home .content
+{
+    border: 0px solid;
+    text-align: center;
+    width: 60rem;
+
+}
+
+.home .content h3
+{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.home .content span
+{
+    color: var(--green);
+}
+
+
+.home .content p
+{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.7;
+}
 
 
 
-/* products */
+
+
+
+
+
+
+/* products 
 .products .product-slider
 {
     border:0px solid;
@@ -205,7 +310,7 @@ body
     padding: .5rem 0;
 }
 
-/* products */
+ products */
 
 /* media queires*/
 
@@ -219,6 +324,43 @@ body
     {
         padding: 2rem;
     }
+    section
+    {
+        padding: 2rem 9%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+
+    }
 }
 
 @media (max-width: 450px)
@@ -227,4 +369,11 @@ body
     {
     font-size: 50%;
     }
+
+    .heading
+    {
+        font-size: 2.5rem;
+    }
 }
+
+/* media queires*/
