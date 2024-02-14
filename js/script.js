@@ -1,11 +1,34 @@
 
-/* let searchForm = document.querySelector('search-form');
+/** 
+let searchForm = document.querySelector('.search-form');
+let navbar = document.querySelector('.navbar');
+
 
 document.querySelector('#search-btn').onclick = () =>
 {
-    searchForm.classList.toggle('active');
+  searchForm.classList.toggle('active');
+  navbar.classList.remove('active');
 }
+
+document.querySelector('#menu-btn').onclick = () =>
+{
+  searchForm.classList.remove('active');
+  navbar.classList.toggle('active');
+    
+}
+
+window.onscroll = () =>
+{
+  searchForm.classList.remove('active');
+  navbar.classList.remove('active');
+}
+
 */
+
+
+/**
+ * swiper for product section
+
 
 var swiper = new Swiper(".product-slider", {
     loop:true,
@@ -28,3 +51,5 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+
+   */
