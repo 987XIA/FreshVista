@@ -45,6 +45,7 @@ body
 section
 {
     padding: 2rem 9%;
+    margin-top: 2rem;
 }
 
 .heading
@@ -103,6 +104,7 @@ section
     padding: 2rem 9%;
     background: #fff;
     box-shadow: var(--box-shadow);
+    z-index: 1000;
 }
 
 .header .logo
@@ -263,7 +265,7 @@ section
 {
     border: 0px solid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr)):
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     gap: 1.5rem;
 }
 
@@ -287,14 +289,15 @@ section
 
 .flyer .box-container .box img
 {
-    margin:1rem 0;
+    margin: 1rem 0;
+    width: 25rem;
     height:15rem;
 }
 
 .flyer .box-container .box h3
 {
     font-size:2.5rem;
-    line-height:1.8;
+    line-height: 1.8rem;
     color:var(--black);
 }
 
@@ -315,6 +318,18 @@ section
     padding: .5rem 0;
 }
 
+.flyer .box-container .box .ul
+{
+    list-style-type: disc;
+    margin-left: 4rem;
+    text-align: left;
+}
+
+.flyer .box-container .box .li
+{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
 
 /* flyer */
 
@@ -338,7 +353,7 @@ section
 .products .product-slider .box
 {
     border: 0px solid;
-    background: white;
+    background: #fff;
     border-radius: .5rem;
     text-align: center;
     padding: 3rem 2rem;
@@ -350,11 +365,12 @@ section
 
 .products .product-slider .box:hover
 {
-    box-shadow: 1px 1px 10px 4px var(--green);
+    box-shadow: 1px 1px 10px 1px var(--green);
 }
 
 .products .product-slider .box img
 {
+    margin: 1rem 0;
     height: 20rem;
     width: 25rem;
 }
@@ -362,6 +378,7 @@ section
 .products .product-slider .box h1
 {
     font-size: 2.5rem;
+    line-height: 1.8rem;
     color: var(--black);
 }
 
@@ -384,61 +401,69 @@ section
 
 
 /* suggest */
-.suggest .product-slider
-{
-    border:0px solid;
-    padding: 1rem;
-}
-
-.suggest .product-slider:first-child
-{
-    margin-bottom: 2rem;
-}
-
-.suggest .product-slider .box
+.suggest .box-container
 {
     border: 0px solid;
-    background: white;
-    border-radius: .5rem;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.suggest .box-container .box
+{
+    border: 0px solid;
     padding: 3rem 2rem;
-    outline-offset: -1rem;
+    background: #fff;
     outline: var(--outline);
+    outline-offset: -1rem;
+    text-align:center;
     box-shadow: var(--box-shadow);
-    transition: .2s linear;
+
+
 }
 
-.suggest .product-slider .box:hover
+.suggest .box-container .box:hover
 {
-    box-shadow: 1px 1px 10px 4px var(--green);
+    box-shadow: 1px 1px 10px 1px var(--green);
 }
 
-.suggest .product-slider .box img
+.suggest .box-container .box img
 {
-    height: 20rem;
+    margin: 1rem 0;
     width: 25rem;
+    height:15rem;
 }
 
-.suggest .product-slider .box h1
+.suggest .box-container .box h3
 {
-    font-size: 2.5rem;
-    color: var(--black);
+    font-size:2.5rem;
+    line-height: 1.8rem;
+    color:var(--black);
 }
 
-.suggest .product-slider .box .price
+.suggest .box-container .box p
+{
+    font-size:1.5rem;
+    line-height:1.5;
+    color:var(--light-color);
+    padding: .5rem 0;
+    
+
+}
+
+.suggest .box-container .box .price
 {
     font-size: 2rem;
     color: var(--light-color);
     padding: .5rem 0;
 }
 
-.suggest .product-slider .box .stars
+.suggest .box-container .box .stars
 {
     font-size: 1.7rem;
     color: orange;
     padding: .5rem 0;
 }
-
 /* suggest */
 
 
